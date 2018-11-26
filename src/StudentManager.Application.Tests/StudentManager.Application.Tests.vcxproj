@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{007BC90A-9171-4C5A-82A5-A2BC56DA8082}</ProjectGuid>
+    <ProjectGuid>{3C4FDACD-BE43-4A76-A2D1-5FDC18290234}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>StudentManagerDomainTests</RootNamespace>
+    <RootNamespace>StudentManagerApplicationTests</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
     <VcpkgTriplet Condition="'$(Platform)'=='Win32'">x86-windows-static-md</VcpkgTriplet>
     <VcpkgTriplet Condition="'$(Platform)'=='x64'">x64-windows-static-md</VcpkgTriplet>
@@ -93,14 +93,10 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -158,7 +154,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
-    <ClInclude Include="StudentTest.h" />
+    <ClInclude Include="StudentServiceTest.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -167,10 +163,13 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="StudentManager.Domain.Tests.cpp" />
-    <ClCompile Include="StudentTest.cpp" />
+    <ClCompile Include="StudentManager.Application.Tests.cpp" />
+    <ClCompile Include="StudentServiceTest.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\StudentManager.Application\StudentManager.Application.vcxproj">
+      <Project>{b6618d06-2466-49f2-bbdb-eab63b2ca1b8}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\StudentManager.Domain\StudentManager.Domain.vcxproj">
       <Project>{ab16cb79-f46f-4d3f-8bc2-0191079c2d42}</Project>
     </ProjectReference>

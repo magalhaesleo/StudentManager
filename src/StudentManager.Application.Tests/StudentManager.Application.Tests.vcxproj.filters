@@ -14,17 +14,17 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="Features">
-      <UniqueIdentifier>{ce8c5914-c15b-4a4f-a77c-3892f0ab208a}</UniqueIdentifier>
+      <UniqueIdentifier>{89d3f925-b8a1-4696-a376-3ed5e910b181}</UniqueIdentifier>
     </Filter>
     <Filter Include="Features\Students">
-      <UniqueIdentifier>{56ce27db-60f6-4a5b-b2e9-8905c5c932b0}</UniqueIdentifier>
+      <UniqueIdentifier>{b5e160a2-eac1-4127-b596-cd9054fa5b89}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="StudentTest.h">
+    <ClInclude Include="StudentServiceTest.h">
       <Filter>Features\Students</Filter>
     </ClInclude>
   </ItemGroup>
@@ -32,10 +32,10 @@
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StudentManager.Domain.Tests.cpp">
+    <ClCompile Include="StudentManager.Application.Tests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StudentTest.cpp">
+    <ClCompile Include="StudentServiceTest.cpp">
       <Filter>Features\Students</Filter>
     </ClCompile>
   </ItemGroup>

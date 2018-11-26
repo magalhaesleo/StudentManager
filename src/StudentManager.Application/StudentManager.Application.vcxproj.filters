@@ -14,28 +14,40 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="Features">
-      <UniqueIdentifier>{ce8c5914-c15b-4a4f-a77c-3892f0ab208a}</UniqueIdentifier>
+      <UniqueIdentifier>{c5ed9832-233b-4195-b850-a6014a34c407}</UniqueIdentifier>
     </Filter>
     <Filter Include="Features\Students">
-      <UniqueIdentifier>{56ce27db-60f6-4a5b-b2e9-8905c5c932b0}</UniqueIdentifier>
+      <UniqueIdentifier>{acf7fed1-e245-4b16-807d-44c8421c83ec}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h">
+    <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="StudentTest.h">
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IStudentService.h">
       <Filter>Features\Students</Filter>
+    </ClInclude>
+    <ClInclude Include="StudentService.h">
+      <Filter>Features\Students</Filter>
+    </ClInclude>
+    <ClInclude Include="Export.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pch.cpp">
+    <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StudentManager.Domain.Tests.cpp">
+    <ClCompile Include="StudentManager.Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StudentTest.cpp">
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StudentService.cpp">
       <Filter>Features\Students</Filter>
     </ClCompile>
   </ItemGroup>

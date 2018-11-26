@@ -15,3 +15,8 @@ void Student::Validate()
 {
 	cout << "Teste" << endl;
 }
+
+bool Student::Process()
+{
+	return false;
+}

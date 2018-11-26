@@ -5,8 +5,10 @@ class STUDENTMANAGERDOMAIN_API Student : public Entity
 {
 public:
 	Student();
-	~Student();
+	virtual ~Student();
 
 	void Validate();
+
+	virtual bool Process();
 };
 
