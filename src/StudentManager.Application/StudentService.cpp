@@ -1,8 +1,7 @@
 #include "stdafx.h"
 #include "StudentService.h"
 
-
-StudentService::StudentService()
+StudentService::StudentService(const IStudentRepository &studentRepository) :_studentRepository(studentRepository)
 {
 }
 

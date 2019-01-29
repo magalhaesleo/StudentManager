@@ -1,10 +1,12 @@
 #pragma once
 #include "IStudentService.h"
+#include "..\StudentManager.Infra.Data\IStudentRepository.h"
 
 class STUDENTMANAGERAPPLICATION_API StudentService : public IStudentService
 {
+	const IStudentRepository & _studentRepository;
 public:
-	StudentService();
+	StudentService(const IStudentRepository &studentRepository);
 	virtual ~StudentService();
 
 	virtual long Add(const Student student) override;
